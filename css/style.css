@@ -873,6 +873,10 @@ h3.my-profession{
     .home .container .social-link li{
         margin:10px;
     }
+    .home{
+        background-image: url(../img12.jpg);
+        background-size: cover;
+    }
 
 }
 
