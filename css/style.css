@@ -458,10 +458,13 @@ h3.my-profession{
     flex: 0 0 60%;
     max-width: 60%;
     margin-top: 40px;
+    
+    
 }
 .about .about-content .personal-info .info-item{
     flex: 0 0 50%;
     max-width: 50% ;
+    text-wrap: wrap;
     
 }
 .about .about-content .personal-info .info-item p{
@@ -470,6 +473,8 @@ h3.my-profession{
     padding: 10px 0;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
+    text-wrap: wrap;
+    
 }
 .about .about-content .personal-info .info-item p span{
     font-weight: 400;
@@ -697,21 +702,18 @@ h3.my-profession{
     margin-bottom: 40px;
 
 }
-.portfolio .portfolio-heading h2{
-    color: var(--text-black-900);
-    font-weight: 500;
-}
-
-.portfolio .portfolio-item{
-    flex: 0 0 33.33%;
-    max-width: 33.33%; 
-   
-}
-.portfolio .portfolio-heading h2{
+.protfolio .portfolio-heading h2{
     color: var(--text-black-900);
     font-weight: 500;
     margin-bottom: 30px;
+    
 }
+
+.portfolio .portfolio-item .portfolio-img{
+    width: 100px;
+   
+}
+
 .portfolio .portfolio-item-inner{
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
@@ -719,9 +721,14 @@ h3.my-profession{
     cursor: pointer;
 
 }
-.portfolio .portfolio-item-inner .portfolio-img img{
+.portfolio-img img{
     width: 100%;
-    /* display: block; */
+    
+
+}
+.portfolio-images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 
@@ -817,9 +824,14 @@ h3.my-profession{
 }
 .contact .contact-form .btn{
     height: 50px;
-    padding: 0 50px;
+    width: calc(100% - 200px);
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
-
 
 
 /* 
@@ -855,6 +867,10 @@ h3.my-profession{
     .home .home-image{
         display: none;
     }
+    .portfolio-images{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media (max-width:767px){
@@ -877,14 +893,29 @@ h3.my-profession{
         background-image: url(../img12.jpg);
         background-size: cover;
     }
+    
 
 }
 
-@media (max-width:360px){
-    .portfolio .portfolio-item .portfolio-item img{
-        flex: 0 0 50%;
-        max-width: 50%;
-        width: 200px;
+@media (max-width:576px){
+    .portfolio-img img{
+        width: 100%;
+    }
+    .portfolio-images{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about .row{
+        flex-direction: column;
+    }
+    .contact .contact-form .btn{
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
     }
 
 }

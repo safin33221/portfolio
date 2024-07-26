@@ -1,4 +1,4 @@
-// toggler style switcher
+2// toggler style switcher
 
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
 styleSwitcherToggle.addEventListener("click",() => {
