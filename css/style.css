@@ -742,6 +742,7 @@ h3.my-profession{
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
+    margin: 0 auto;
     margin-bottom: 20px;
 
 }
