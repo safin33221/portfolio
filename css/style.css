@@ -77,8 +77,8 @@ section{
 }
 
 .section .container{
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 45px;
+    
 }
 .section-title{
     flex: 0 0 100%;
@@ -429,6 +429,7 @@ h3.my-profession{
 .about .about-content{
     flex: 0 0 100%;
     max-width: 100%;
+    
 }
 .about .about-content .about-text{
     flex: 0 0 100%;
@@ -622,7 +623,7 @@ h3.my-profession{
 
 /* service part satart */
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: scale(110%);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
@@ -832,7 +833,7 @@ h3.my-profession{
 }
 .contact .contact-form .btn{
     height: 50px;
-    width: calc(100% - 200px);
+    width: 100%;
     display: flex;
     margin: 0 auto;
     text-align: center;
@@ -894,6 +895,9 @@ h3.my-profession{
         flex: 0 0 100%;
         min-width: 100%;
     }
+    /* .home .container .social-link{
+        
+    } */
     .home .container .social-link li{
         margin:10px;
     }
@@ -901,11 +905,13 @@ h3.my-profession{
         background-image: url(../img12.jpg);
         background-size: cover;
         
+        background-position-y: -200px;
+        
     }
-    }
+}
     
 
-}
+
 
 @media (max-width:576px){
     .portfolio-img img{
@@ -927,5 +933,18 @@ h3.my-profession{
         width: 100%;
         
     }
+    .info-item p{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .info-item span{
+        padding-left: 10px;
+    }
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        
+      }
 
 }
