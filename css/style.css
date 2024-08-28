@@ -313,8 +313,7 @@ section{
     
 }
 .home .container{
-    margin-top: 150px;
-    
+    margin-top: 0px;
 }
 .home .home-info{
     flex: 0 0 60%;
@@ -393,7 +392,7 @@ h3.my-profession{
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
 
  }
  .container .row .social-link li{
@@ -622,6 +621,13 @@ h3.my-profession{
 
 
 /* service part satart */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+
 .service .container{
     padding-bottom: 40px;
 }
@@ -638,6 +644,7 @@ h3.my-profession{
     padding: 30px 15px;
     align-items: center;
     transition: all 0.3s ease;
+    height: 350px;
 }
 .service .service-item .service-item-inner:hover{
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
@@ -893,6 +900,8 @@ h3.my-profession{
     .home{
         background-image: url(../img12.jpg);
         background-size: cover;
+        
+    }
     }
     
 
