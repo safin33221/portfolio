@@ -307,7 +307,6 @@ section{
 .home{
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
     display: flex;
     color: var(-var(--text-black-900));
     
@@ -902,10 +901,10 @@ h3.my-profession{
         margin:10px;
     }
     .home{
-        background-image: url(../img12.jpg);
+        /* background-image: url(../img12.jpg);
         background-size: cover;
         
-        background-position-y: -200px;
+        background-position-y: -70px; */
         
     }
 }
@@ -945,6 +944,12 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 100%;
         
-      }
+    }
+    h3.my-profession{
+        font-size: 25px;
+    }
+    .home-info p {
+        font-size: 18px;
+    }
 
 }
